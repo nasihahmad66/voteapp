@@ -27,10 +27,11 @@ function App() {
   }
 
   function telahmemilih() {
-    candidates = candidates.map((candidate) => {
+    let newCandidates = candidates.map((candidate) => {
       candidate.pilih = true
+      return candidate
     });
-    setCandidates(candidates);
+    setCandidates(newCandidates);
   }
 
   return (

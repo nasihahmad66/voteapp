@@ -24,7 +24,7 @@ function VotingCard(props) {
         <Card.Text>{candidate.Visi}</Card.Text>
         <Card.Subtitle>MISI</Card.Subtitle>
         <Card.Text>{candidate.Misi}</Card.Text>
-        <Button disabled={candidate.pilih}  variant="success" onClick={candidate.pilih?{}:() => voteCandidate(candidate._id)}>
+        <Button disabled={candidate.pilih}  variant="success" onClick={candidate.pilih?()=>{}:() => voteCandidate(candidate._id)}>
           Vote
         </Button>
       </Card.Body>
